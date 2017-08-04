@@ -18,4 +18,9 @@ public class EventPlannerTest {
         EventPlanner testEventPlanner = new EventPlanner(20, "FullDinner", "beverageOption", "entertainmentOption");
         assertEquals("FullDinner", testEventPlanner.getMeal());
     }
+    @Test
+    public void getMeal_recieveBeverageChoice_BeverageChoice() {
+        EventPlanner testEventPlanner = new EventPlanner(20, "FullDinner", "beverageOption", "entertainmentOption");
+        assertEquals("beverageOption", testEventPlanner.getBeverage());
+    }
 }

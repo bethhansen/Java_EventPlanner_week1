@@ -19,4 +19,7 @@ public class EventPlanner {
     public String getMeal()  {
         return mealOption;
     }
+    public String getBeverage()  {
+        return beverageOption;
+    }
 }
