@@ -5,27 +5,37 @@ public class EventPlannerTest {
 
     @Test
     public void Event_instantiatesCorrectly() {
-        EventPlanner testEvent = new EventPlanner(2, "mealOption", "beverageOption", "entertainmentOption", 0);
+        EventPlanner testEvent = new EventPlanner(2, "mealOption", "beverageOption", "entertainmentOption", 0, 1);
         assertEquals(true, testEvent instanceof EventPlanner);
     }
     @Test
     public void getGuestNumber_recieveGuestCount_20() {
-        EventPlanner testEventPlanner = new EventPlanner(20, "FullDinner", "beverageOption", "entertainmentOption", 0);
+        EventPlanner testEventPlanner = new EventPlanner(20, "FullDinner", "beverageOption", "entertainmentOption", 0, 1);
         assertEquals(20, testEventPlanner.getGuest());
     }
     @Test
     public void getMeal_recieveMealCoice_FullDinner() {
-        EventPlanner testEventPlanner = new EventPlanner(20, "FullDinner", "beverageOption", "entertainmentOption", 0);
+        EventPlanner testEventPlanner = new EventPlanner(20, "FullDinner", "beverageOption", "entertainmentOption", 0, 1);
         assertEquals("FullDinner", testEventPlanner.getMeal());
     }
     @Test
     public void getBeverage_recieveBeverageChoice_BeverageChoice() {
-        EventPlanner testEventPlanner = new EventPlanner(20, "FullDinner", "beverageOption", "entertainmentOption", 0);
+        EventPlanner testEventPlanner = new EventPlanner(20, "FullDinner", "beverageOption", "entertainmentOption", 0, 1);
         assertEquals("beverageOption", testEventPlanner.getBeverage());
     }
     @Test
     public void getEntertainment_recieveEntertainmentChoice_EntertainmentChoice() {
-        EventPlanner testEventPlanner = new EventPlanner(20, "FullDinner", "beverageOption", "entertainmentOption", 0);
+        EventPlanner testEventPlanner = new EventPlanner(20, "FullDinner", "beverageOption", "entertainmentOption", 0, 1);
+        assertEquals(0, testEventPlanner.getCost());
+    }
+    @Test
+    public void getTotalCost_recieveTotalCost_Cost() {
+        EventPlanner testEventPlanner = new EventPlanner(20, "FullDinner", "beverageOption", "entertainmentOption", 0, 1);
+        assertEquals(0, testEventPlanner.getCost());
+    }
+    @Test
+    public void getCouponOne_recieveCouponOne_Discount() {
+        EventPlanner testEventPlanner = new EventPlanner(20, "FullDinner", "beverageOption", "entertainmentOption", 0, 1);
         assertEquals(0, testEventPlanner.getCost());
     }
 }
