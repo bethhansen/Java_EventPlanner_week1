@@ -1,37 +1,4 @@
-
 public class EventPlanner {
-
-    public int getGuestNumber() {
-        return guestNumber;
-    }
-
-    public String getMealOption() {
-        return mealOption;
-    }
-
-    public String getBeverageOption() {
-        return beverageOption;
-    }
-
-    public String getEntertainmentOption() {
-        return entertainmentOption;
-    }
-
-    public int getInitialCost() {
-        return initialCost;
-    }
-
-    public int getCouponOne() {
-        return couponOne;
-    }
-
-    public int getCouponTwo() {
-        return couponTwo;
-    }
-
-    public int getFinalCost() {
-        return finalCost;
-    }
 
     private int guestNumber;
     private String mealOption;
@@ -42,7 +9,6 @@ public class EventPlanner {
     private int couponTwo;
     private int finalCost;
 
-
     public EventPlanner(int guest, String meal, String beverage, String entertainment, int cost, int coupon1, int coupon2, int adjustedCost) {
         guestNumber = guest;
         mealOption = meal;
@@ -52,5 +18,29 @@ public class EventPlanner {
         couponOne = coupon1;
         couponTwo = coupon2;
         finalCost = adjustedCost;
+    }
+    public int getGuestNumber() {
+        return guestNumber;
+    }
+    public String getMealOption() {
+        return mealOption;
+    }
+    public String getBeverageOption() {
+        return beverageOption;
+    }
+    public String getEntertainmentOption() {
+        return entertainmentOption;
+    }
+    public int getInitialCost() {
+        return initialCost;
+    }
+    public int getCouponOne() {
+        return couponOne;
+    }
+    public int getCouponTwo() {
+        return couponTwo;
+    }
+    public int getFinalCost() {
+        return finalCost;
     }
  }
