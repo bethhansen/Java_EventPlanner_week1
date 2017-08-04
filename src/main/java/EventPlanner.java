@@ -22,4 +22,7 @@ public class EventPlanner {
     public String getBeverage()  {
         return beverageOption;
     }
+    public String getEntertainment()  {
+        return entertainmentOption;
+    }
 }
