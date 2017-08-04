@@ -20,7 +20,8 @@ public class EventPlanner {
         finalCost = adjustedCost;
     }
     public int getGuestNumber() {
-        return guestNumber;
+        return guestNumber * 1;
+
     }
     public String getMealOption() {
         return mealOption;
