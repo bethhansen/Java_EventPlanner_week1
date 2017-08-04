@@ -39,6 +39,12 @@ build/
 gradle/
 gradlew*
 settings.gradle
+build/
+.gradle/
+.idea/
+gradle/
+gradlew*
+settings.gradle
 
 # IntelliJ #
 ############
