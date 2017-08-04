@@ -1,9 +1,10 @@
+
 public class EventPlanner {
 
-    public int guestNumber;
-    public String mealOption;
-    public String beverageOption;
-    public String entertainmentOption;
+    private int guestNumber;
+    private String mealOption;
+    private String beverageOption;
+    private String entertainmentOption;
 
 
     public EventPlanner(int guest, String meal, String beverage, String entertainment) {
@@ -11,9 +12,11 @@ public class EventPlanner {
         mealOption = meal;
         beverageOption = beverage;
         entertainmentOption = entertainment;
-
     }
     public int getGuest()  {
         return guestNumber;
+    }
+    public String getMeal()  {
+        return mealOption;
     }
 }
