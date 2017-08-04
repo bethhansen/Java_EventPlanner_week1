@@ -2,6 +2,7 @@ public class EventPlanner {
 
     private int guestNumber;
     private String mealOption;
+    private int mealCost;
     private String beverageOption;
     private String entertainmentOption;
     private int initialCost;
@@ -23,9 +24,18 @@ public class EventPlanner {
         return guestNumber * 1;
 
     }
-    public String getMealOption() {
-        return mealOption;
-    }
+//    public String getMealOption() {
+//        if (mealOption.equals("Full Dinner")) {
+//            mealCost = 15;
+//        } else if (mealOption.equals("Lunch")) {
+//            mealCost = 10;
+//        } else if (mealOption.equals("Appitizers")) {
+//            mealCost = 5;
+//        } else
+//            mealCost = 0;
+//        return mealOption;
+//
+//    }
     public String getBeverageOption() {
         return beverageOption;
     }
