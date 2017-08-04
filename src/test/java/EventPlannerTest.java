@@ -8,5 +8,9 @@ public class EventPlannerTest {
         EventPlanner testEvent = new EventPlanner(2, "mealOption", "beverageOption", "entertainmentOption");
         assertEquals(true, testEvent instanceof EventPlanner);
     }
-
+    @Test
+    public void getGuestCount_recieveGuestCount_20() {
+        EventPlanner testEventPlanner = new EventPlanner(20, "mealOption", "beverageOption", "entertainmentOption");
+        assertEquals(20, testEventPlanner.getGuest());
+    }
 }

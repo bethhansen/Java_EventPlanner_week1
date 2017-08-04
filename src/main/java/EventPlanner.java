@@ -1,17 +1,19 @@
 public class EventPlanner {
 
-    private int mGuestNumber;
-    private String mMealOption;
-    private String mBeverageOption;
-    private String mEntertainmentOption;
+    public int guestNumber;
+    public String mealOption;
+    public String beverageOption;
+    public String entertainmentOption;
 
 
-    public EventPlanner(int guestNumber, String mealOption, String beverageOption, String entertainmentOption) {
-        mGuestNumber = guestNumber;
-        mMealOption = mealOption;
-        mBeverageOption = beverageOption;
-        mEntertainmentOption = entertainmentOption;
+    public EventPlanner(int guest, String meal, String beverage, String entertainment) {
+        guestNumber = guest;
+        mealOption = meal;
+        beverageOption = beverage;
+        entertainmentOption = entertainment;
 
     }
-
+    public int getGuest()  {
+        return guestNumber;
+    }
 }
