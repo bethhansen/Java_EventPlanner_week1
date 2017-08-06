@@ -64,7 +64,7 @@ public class EventPlanner {
         return input;
     }
 
-    public static int calculateEventCost(int guest, String meal, String beverage, String entertainment) {
+    public static int calculateEventCost(int guest, String meal, String beverage, String entertainment, int cost, String coupon1, String coupon2, int finalcost) {
         Map<String, Integer> typeValues = new HashMap<String, Integer>();
         typeValues.put("Dinner", 20);
         typeValues.put("Lunch", 13);
@@ -76,11 +76,15 @@ public class EventPlanner {
         typeValues.put("Live Band", 300);
         typeValues.put("DJ", 200);
         typeValues.put("Karaoke", 100);
-        typeValues.
+        typeValues.put("yes", 100);
+        typeValues.put("no", 0);
+        typeValues.put("Family member", 50);
+        typeValues.put("Employee", 40);
 
-        int costs = (guest * typeValues.get(meal)) + (guest * typeValues.get(beverage)) + typeValues.get(entertainment);
 
-        return cost;
+        int costs = (guest * typeValues.get(meal)) + (guest * typeValues.get(beverage)) + typeValues.get(entertainment)  - typeValues.get(coupon1) - typeValues.get(coupon2);
+
+        return costs;
     }
 }
 
