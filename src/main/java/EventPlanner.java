@@ -1,4 +1,5 @@
-import java.io.Console;
+
+
 import java.util.List;
 import java.util.HashMap;
 import java.util.Map;
@@ -15,17 +16,18 @@ public class EventPlanner {
     private int finalCost;
 
     public EventPlanner(int guest, String meal, String beverage, String entertainment, int cost, int coupon1, int coupon2, int adjustedCost) {
-        guestNumber = guest;
-        mealOption = meal;
-        beverageOption = beverage;
-        entertainmentOption = entertainment;
-        initialCost = cost;
-        couponOne = coupon1;
-        couponTwo = coupon2;
-        finalCost = adjustedCost;
+        this.guestNumber = guest;
+        this.mealOption = meal;
+        this.beverageOption = beverage;
+        this.entertainmentOption = entertainment;
+        this.initialCost = cost;
+        this.couponOne = coupon1;
+        this.couponTwo = coupon2;
+        this.finalCost = adjustedCost;
     }
+
     public int getGuestNumber() {
-        return guestNumber * 1;
+        return guestNumber;
     }
     public String getMealOption() {
         return mealOption;
@@ -49,33 +51,16 @@ public class EventPlanner {
         return finalCost;
     }
 
-    public static String isCorrectType(List<String> types, String type, String input) {
-        Console myConsole = System.console();
-        if (!types.contains(input)) {
-            boolean typeBoolean = false;
-            while (!typeBoolean) {
-                System.out.println("Please select a type of " + type + " from the above list.");
-                input = myConsole.readLine();
-                if (types.contains(input)) {
-                    typeBoolean = true;
-                }
-            }
-        }
-        return input;
-    }
+
 
     public static int calculateEventCost(int guest, String meal, String beverage, String entertainment, int cost, String coupon1, String coupon2, int finalcost) {
         Map<String, Integer> typeValues = new HashMap<String, Integer>();
         typeValues.put("Dinner", 20);
         typeValues.put("Lunch", 13);
-        typeValues.put("Appitizers", 8);
-        typeValues.put("None", 0);
         typeValues.put("Full Bar", 15);
-        typeValues.put("Beer and Wine", 10);
         typeValues.put("Soda", 3);
         typeValues.put("Live Band", 300);
         typeValues.put("DJ", 200);
-        typeValues.put("Karaoke", 100);
         typeValues.put("yes", 100);
         typeValues.put("no", 0);
         typeValues.put("Family member", 50);
