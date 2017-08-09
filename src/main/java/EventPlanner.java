@@ -1,4 +1,4 @@
-
+package models;
 
 import java.util.List;
 import java.util.HashMap;
@@ -11,21 +11,20 @@ public class EventPlanner {
     private String beverageOption;
     private String entertainmentOption;
     private int initialCost;
-    private int couponOne;
-    private int couponTwo;
+    private int coupon1;
+    private int coupon2;
     private int finalCost;
 
-    public EventPlanner(int guest, String meal, String beverage, String entertainment, int cost, int coupon1, int coupon2, int adjustedCost) {
-        this.guestNumber = guest;
-        this.mealOption = meal;
-        this.beverageOption = beverage;
-        this.entertainmentOption = entertainment;
-        this.initialCost = cost;
-        this.couponOne = coupon1;
-        this.couponTwo = coupon2;
+    public EventPlanner(int guestNumber, String mealOption, String beverageOption, String entertainmentOption, int initialCost, int coupon1, int coupon2, int adjustedCost) {
+        this.guestNumber = guestNumber;
+        this.mealOption = mealOption;
+        this.beverageOption = beverageOption;
+        this.entertainmentOption = entertainmentOption;
+        this.initialCost = initialCost;
+        this.coupon1 = coupon1;
+        this.coupon2 = coupon2;
         this.finalCost = adjustedCost;
     }
-
     public int getGuestNumber() {
         return guestNumber;
     }
@@ -41,11 +40,11 @@ public class EventPlanner {
     public int getInitialCost() {
         return initialCost;
     }
-    public int getCouponOne() {
-        return couponOne;
+    public int getCoupon1() {
+        return coupon1;
     }
-    public int getCouponTwo() {
-        return couponTwo;
+    public int getCoupon2() {
+        return coupon2;
     }
     public int getFinalCost() {
         return finalCost;
@@ -73,19 +72,3 @@ public class EventPlanner {
     }
 }
 
-
-
-
-
-//    public String getMealOption() {
-//        if (mealOption.equals("Full Dinner")) {
-//            mealCost = 15;
-//        } else if (mealOption.equals("Lunch")) {
-//            mealCost = 10;
-//        } else if (mealOption.equals("Appitizers")) {
-//            mealCost = 5;
-//        } else
-//            mealCost = 0;
-//        return mealOption;
-//
-//    }
