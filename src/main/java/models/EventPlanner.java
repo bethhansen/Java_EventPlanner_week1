@@ -71,4 +71,3 @@ public class EventPlanner {
         return costs;
     }
 }
-

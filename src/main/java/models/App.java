@@ -29,19 +29,11 @@ public class App {
             System.out.println("Are you a Employee? Please choose 1 for yes, 2 for no");
             String stringCoupon2 = bufferedReader.readLine();
 
-            EventPlanner newEventPlanner = new EventPlanner(guestNumber, mealOption, beverageOption, entertainmentOption, initialCost, coupon1, coupon2, );
 
-            System.out.println("Number of guests:" + "guestNumber");
-            System.out.println("Your meal choice is:" + "mealOption");
-            System.out.println("Your beverage choice is:" + "beverageOption");
-            System.out.println("Your entrainment choice is:" + "entertainmentOption");
-            System.out.println("You qualify for the Frequent Party Club discount:" + "coupon1");
-            System.out.println("You qualify for the Frequent Party Club discount:" + "coupon2");
+        } catch (IOException e) {
+            e.printStackTrace();
 
-
-            System.out.println("\nYour total cost is $" + costs + ".00.\n");
         }
     }
 
-    }
-
+}
