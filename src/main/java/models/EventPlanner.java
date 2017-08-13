@@ -31,6 +31,7 @@ public class EventPlanner {
         return guestNumber;
     }
 
+
     public String getMealOption() {
         return mealOption;
     }
@@ -124,6 +125,8 @@ public class EventPlanner {
         }
         return coup;
     }
+
+
 }
 
 

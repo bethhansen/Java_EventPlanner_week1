@@ -14,17 +14,19 @@ public class App {
             System.out.println("How many people are going to be coming to your event?");
             String stringGuests = bufferedReader.readLine();
 
-            System.out.println("What type of food would you like to serve at your event? Choose from the following: 1 for Dinner, 2 for Lunch");
+            System.out.println("What type of food would you like to serve at your event? Choose from the following: 1 = Dinner, 2 = Lunch");
             String stringMeals = bufferedReader.readLine();
 
-            System.out.println("What type of drinks would you like to serve at your event? Choose from the following: 1 for Full Bar, 2 for Soda.");
+            System.out.println("What type of drinks would you like to serve at your event? Choose from the following: 1 = Full Bar, 2 = Soda.");
             String stringBeverages = bufferedReader.readLine();
 
-            System.out.println("What type of entertainment would you like to have at your event? Please choose one of the following: 1 for Live Band, 2 for DJ");
+            System.out.println("What type of entertainment would you like to have at your event? Please choose one of the following: 1 = Live Band, 2 = DJ");
             String stringEntertainment = bufferedReader.readLine();
 
-            System.out.println("Are you a member of our Frequent Party Club? Please choose 1 for yes, 2 for no.");
+            System.out.println("Are you a member of our Frequent Party Club or are you an Employee? Please choose one of the following: 1 = Member, 2 = Employee.");
             String stringCoupons = bufferedReader.readLine();
+
+
 
 
             EventPlanner event = new EventPlanner(Integer.parseInt(stringGuests), Integer.parseInt(stringMeals), Integer.parseInt(stringBeverages), Integer.parseInt(stringEntertainment), Integer.parseInt(stringCoupons));
